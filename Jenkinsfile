@@ -10,7 +10,7 @@ pipeline {
             }
         }
         stage ('Sonarqube Analysis') {
-            enrironment {
+            environment {
                 scannerHome = tool 'saidemy-sonar-scanner'
             }
             steps {
